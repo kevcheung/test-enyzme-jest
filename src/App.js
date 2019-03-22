@@ -5,7 +5,6 @@ class App extends Component {
   state = {
     name: ''
   }
-  // handleNameChange = this.handleNameChange.bind(this);
 
   handleNameChange = (e) => {
     this.setState({
@@ -16,13 +15,14 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <Input 
-          name="name"
-          type="text"
-          onChange={this.handleNameChange}
-          placeholder="Name..."
-          value={this.state.name}
-        />
+        <h1>Testing With Enzyme and Jest</h1>
+          <Input 
+            name="name"
+            type="text"
+            onChange={this.handleNameChange}
+            placeholder="Name..."
+            value={this.state.name}
+          />
       </div>
     );
   }
